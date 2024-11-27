@@ -1,0 +1,433 @@
+/* Reset Default */
+body, h1, h2, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background-color: hsla(0, 100%, 50%, 0.89);
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+  text-align: center;
+}
+
+header .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+header .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Tombol Pelajari Lebih Lanjut */
+#learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#learn-more-btn:hover {
+  background-color: #4CAF50;
+}
+
+
+/* Styling untuk Footer */
+footer {
+  text-align: center;
+  margin-top: 50px; /* Memberikan jarak dari konten sebelumnya */
+  padding: 20px;
+  background-color: #f8f9fa; /* Warna latar belakang footer */
+  border-top: 2px solid #e9ecef; /* Garis pemisah */
+}
+
+/* Styling untuk Judul di Footer */
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40; /* Warna teks */
+}
+
+/* Styling untuk Galeri Tetap Sama */
+/* Foto di Footer */
+.photo-gallery {
+  display: flex;
+  justify-content: center; /* Posisikan gambar di tengah */
+  gap: 20px;
+  margin: 0 auto; /* Pastikan elemen tetap di bawah */
+}
+
+.photo-item {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-section {
+  background-color: white; /* Latar belakang putih */
+  padding: 40px 20px; /* Memberikan jarak di dalam section */
+  text-align: center;
+  margin-top: 40px; /* Jarak dari konten sebelumnya */
+  border-top: 2px solid #e9ecef; /* Garis pembatas */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Bayangan atas */
+}
+
+.photo-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+/* Galeri Foto */
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-item {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsif untuk Perangkat Kecil */
+@media (max-width: 600px) {
+  .photo-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo-item {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+
+
+
+
+/* Tampilan Umum (untuk desktop dan tablet besar) */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Pop-up */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.popup.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 80%; /* Sesuaikan lebar dengan layar */
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Tombol */
+button, a.btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+button:hover, a.btn:hover {
+  background-color: #45a049;
+}
+
+/* Mengatur foto di bagian bawah */
+#photos-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+#photos-container img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries untuk Responsivitas */
+
+/* Tablet dan layar lebih kecil */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  /* Pop-up lebih kecil di perangkat mobile */
+  .popup-content {
+    width: 90%;
+  }
+
+  /* Foto di bawah ditampilkan dalam satu kolom */
+  #photos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #photos-container img {
+    width: 80%; /* Lebar foto di layar kecil */
+    margin-bottom: 20px;
+  }
+
+  /* Tombol agar lebih besar dan mudah diklik */
+  button, a.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
+
+/* Ponsel (paling kecil) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  /* Pop-up tetap muncul dengan ukuran yang pas */
+  .popup-content {
+    width: 95%;
+  }
+
+  /* Foto lebih besar di layar ponsel */
+  #photos-container img {
+    width: 90%;
+  }
+
+  /* Tombol lebih besar di ponsel */
+  button, a.btn {
+    padding: 20px 40px;
+    font-size: 20px;
+  }
+}
+
+/* Gaya umum untuk tombol */
+/* Gaya untuk kedua tombol */
+/* Pop-up Content */
+.popup-content {
+  background: rgba(18, 7, 172, 0.781);
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Susun elemen secara vertikal */
+  align-items: center; /* Pusatkan elemen */
+  justify-content: space-between; /* Space between untuk merapikan jarak */
+  height: auto; /* Sesuaikan tinggi konten */
+  max-height: 80vh; /* Maksimum tinggi pop-up untuk responsif */
+  overflow-y: auto; /* Menambahkan scroll jika terlalu tinggi */
+}
+
+/* Social Media Icons */
+#social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Jarak atas untuk ikon sosial media */
+  margin-bottom: 20px; /* Jarak bawah agar tidak rapat dengan tombol tutup */
+  gap: 15px; /* Memberikan jarak antar ikon */
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #4CAF50;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #4CAF50;
+  transform: scale(1.2); /* Membesar sedikit */
+}
+
+
+
+
+/* Tombol Kontak dan Pop-up */
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on buttons */
+.btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Tombol Tutup dengan jarak dari ikon sosial media */
+.popup-content button {
+  margin-top: 20px; /* Memberikan jarak antara ikon sosial media dan tombol tutup */
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 100%; /* Agar tombol tutup memiliki lebar penuh */
+}
+
+/* Efek hover pada tombol tutup */
+.popup-content button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Efek saat tombol ditekan */
+.popup-content button:active {
+  transform: scale(0.95);
+}
+
+/* Untuk memastikan tata letak pop-up responsif di layar kecil */
+@media screen and (max-width: 600px) {
+  .popup-content {
+    width: 80%; /* Pop-up akan memiliki lebar 80% dari layar */
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .popup-content button {
+    width: 100%; /* Tombol tutup akan memenuhi lebar pop-up */
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .social-icon {
+    font-size: 20px; /* Menurunkan ukuran ikon sosial media untuk layar kecil */
+  }
+
+  #social-links {
+    gap: 10px; /* Mengurangi jarak antar ikon pada layar kecil */
+  }
+}
+
+/* Menambahkan animasi untuk pop-up */
+@keyframes popup-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Pop-up */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden; /* Awalnya tersembunyi */
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.popup.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+
